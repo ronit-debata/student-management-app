@@ -12,8 +12,8 @@ import { AttendanceComponent } from './attendance/attendance.component';
 import { StudentListComponent } from './student-list/student-list.component';
 import { StudentCreateComponent } from './student-create/student-create.component';
 import { StudentEditComponent } from './student-edit/student-edit.component';
-import { SearchComponent } from './search/search.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { SeeAttendanceComponent } from './see-attendance/see-attendance.component';
 
 @NgModule({
   declarations: [
@@ -25,8 +25,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     StudentListComponent,
     StudentCreateComponent,
     StudentEditComponent,
-    SearchComponent,
-    DashboardComponent
+    DashboardComponent,
+    SeeAttendanceComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +35,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     ReactiveFormsModule,
     FormsModule
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

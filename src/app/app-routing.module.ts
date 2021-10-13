@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AttendanceComponent } from './attendance/attendance.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { SearchComponent } from './search/search.component';
+import { SeeAttendanceComponent } from './see-attendance/see-attendance.component';
 import { StudentCreateComponent } from './student-create/student-create.component';
 import { StudentEditComponent } from './student-edit/student-edit.component';
 import { StudentListComponent } from './student-list/student-list.component';
@@ -34,8 +34,8 @@ const routes: Routes = [
 
   },
   {
-    path:"search-attendance",
-    component:SearchComponent
+    path:"see-attendance",
+    component:SeeAttendanceComponent
   }
 ];
 
