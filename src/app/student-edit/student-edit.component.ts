@@ -28,7 +28,7 @@ export class StudentEditComponent implements OnInit {
   ngOnInit(): void {
     this.activeRoute.params.subscribe((paramsData) => {
       this.id = paramsData.id;
-      this.userService.getUserByID(paramsData.id).subscribe((data) => {
+      this.userService.getUserByID(this.id).subscribe((data) => {
         console.log(data)
         delete data.id
         this.studentForm.setValue(data)
