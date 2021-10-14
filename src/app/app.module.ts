@@ -14,6 +14,9 @@ import { StudentCreateComponent } from './student-create/student-create.componen
 import { StudentEditComponent } from './student-edit/student-edit.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SeeAttendanceComponent } from './see-attendance/see-attendance.component';
+import { ChartComponent } from './chart/chart.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -26,14 +29,17 @@ import { SeeAttendanceComponent } from './see-attendance/see-attendance.componen
     StudentCreateComponent,
     StudentEditComponent,
     DashboardComponent,
-    SeeAttendanceComponent
+    SeeAttendanceComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    NgxChartsModule,
+    BrowserAnimationsModule
   ],
   providers: [DatePipe],
   bootstrap: [AppComponent]
